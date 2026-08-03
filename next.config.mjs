@@ -1,11 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: "export",
+
   images: {
     unoptimized: true,
   },
-}
 
-export default nextConfig
+  basePath: "/Data-analyst-portfolio",
+
+  assetPrefix: "/Data-analyst-portfolio",
+
+  trailingSlash: true,
+};
+
+export default nextConfig;
